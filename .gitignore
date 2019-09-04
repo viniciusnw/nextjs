@@ -1,0 +1,15 @@
+/.env
+/bin
+/pkg
+/src
+/server/data/static/build
+/dist
+/secrets
+/.cache
+/.env.local
+.pid
+.DS_Store
+.idea/
+
+yarn-error\.log
+node_modules
