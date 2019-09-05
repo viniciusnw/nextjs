@@ -4,11 +4,13 @@
   "scripts": {
     "dev": "nodemon --exec babel-node --http-parser=legacy server.js",
     "build": "next build",
-    "start": "cross-env NODE_ENV=production node server.js"
+    "start": "cross-env NODE_ENV=production node server.js",
+    "debug": "nodemon --exec babel-node --http-parser=legacy --nolazy --inspect-brk=9229 server.js"
   },
   "dependencies": {
     "express": "^4.14.0",
     "next": "latest",
+    "next-routes": "^1.4.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "styled-components": "^4.3.2"

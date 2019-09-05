@@ -6,6 +6,7 @@ export default class extends Component {
   }
 
   render () {
+    console.log(this)
     return (
       <div>
         <h1>My blog post #{this.props.postId}</h1>

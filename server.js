@@ -18,15 +18,15 @@ app.prepare().then(() => {
     })
 
     server.get('/posts/:id', (req, res) => {
-        return app.render(req, res, '/posts', {
-            id: req.params.id
-        })
+        return app.render(req, res, '/posts', { id: req.params.id })
     })
 
     server.get('/teste', (req, res) => {
-        return app.render(req, res, '/teste', {
-            id: req.params.id
-        })
+        return app.render(req, res, '/teste', { id: req.params.id })
+    })
+
+    server.get('/admin/teste', (req, res) => {
+        return app.render(req, res, '/admin-teste', { id: req.params.id })
     })
 
     server.get('*', (req, res) => {
@@ -35,6 +35,6 @@ app.prepare().then(() => {
 
     server.listen(port, err => {
         if (err) throw err
-        console.log(`> Ready on http://localhost:${port}`)
+        console.log(`> Ready on http://localhost:${port} < `)
     })
 })
