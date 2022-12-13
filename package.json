@@ -8,7 +8,7 @@
     "debug": "nodemon --exec babel-node --http-parser=legacy --nolazy --inspect-brk=9229 server.js"
   },
   "dependencies": {
-    "express": "^4.14.0",
+    "express": "^4.17.3",
     "next": "latest",
     "next-routes": "^1.4.2",
     "react": "^16.7.0",
